@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/ico" sizes="32x32" href="./images/icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Componente de QR code</title>
+
+  <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --slate-300: hsl(212, 45%, 89%);
+      --slate-500: hsl(216, 15%, 48%);
+      --slate-900: hsl(218, 44%, 22%);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+      background: var(--slate-300);
+      color: var(--slate-500);
+      font-family: "Outfit", Arial, sans-serif;
+      font-size: 0.9375rem;
+    }
+
+    main {
+      width: 100%;
+      display: grid;
+      place-items: center;
+    }
+
+    .card {
+      width: min(100%, 20rem);
+      padding: 1rem 1rem 2.5rem;
+      border-radius: 1.25rem;
+      background: var(--white);
+      box-shadow: 0 1.5rem 2.5rem hsla(218, 44%, 22%, 0.12);
+      text-align: center;
+    }
+
+    .card img {
+      display: block;
+      width: 100%;
+      border-radius: 0.625rem;
+    }
+
+    .card h1 {
+      margin: 1.5rem 1rem 1rem;
+      color: var(--slate-900);
+      font-size: 1.375rem;
+      line-height: 1.2;
+    }
+
+    .card p {
+      margin: 0 1rem;
+      line-height: 1.4;
+      letter-spacing: 0.01rem;
+    }
+
+    .card ul {
+      margin: 1rem;
+      padding-left: 1.25rem;
+      text-align: left;
+    }
+
+    .attribution {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      font-size: 0.6875rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a >
+    <article class="card">
+      <a href="https://guimoreira81.github.io/redirecionador/" target="_blank">
+        <img src="./images/qr-code.png" alt="QR code para acessar o Frontend Mentor">
+      </a>
+      <h1>Painel de Links</h1>
+      <p>Escaneie o QR code para visitar páginas exigidas pela atividade</p>
+      <ul>
+        <li>Formulário</li>
+        <li>GitHub</li>
+        <li>Xadrez</li>
+        <li>Landing Page</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="attribution">
+    Desafio por <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Codificado por <a href="https://github.com/guimoreira81" target="_blank">Guilherme Moreira</a>.
+  </footer>
+</body>
+</html>
