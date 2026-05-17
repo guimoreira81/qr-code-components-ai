@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MailFlow - Plataforma de Emails</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <header class="header">
+
+    <div class="logo">
+      ✉ MailFlow
+    </div>
+
+    <nav class="nav">
+      <a href="#inicio">Início</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-buttons">
+      <button class="btn-secondary" id="loginButton">
+        Entrar
+      </button>
+
+      <button class="btn-primary" id="createAccountButton">
+        Criar conta
+      </button>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+
+      <div class="hero-left">
+
+        <div class="badge">
+          Plataforma moderna de emails
+        </div>
+
+        <h1>
+          Escreva emails com
+          velocidade e elegância
+        </h1>
+
+        <p>
+          Organize suas mensagens, responda rapidamente
+          e tenha uma experiência moderna para comunicação.
+        </p>
+
+        <div class="hero-buttons">
+
+          <button class="btn-primary large" id="startButton">
+            Começar agora
+          </button>
+
+          <button class="btn-outline large" id="demoButton">
+            Ver demonstração
+          </button>
+
+        </div>
+
+        <div class="stats">
+
+          <div class="stat-card">
+            <h2>+12k</h2>
+            <span>Usuários ativos</span>
+          </div>
+
+          <div class="stat-card">
+            <h2>98%</h2>
+            <span>Satisfação</span>
+          </div>
+
+          <div class="stat-card">
+            <h2>24/7</h2>
+            <span>Disponibilidade</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-right">
+
+        <div class="login-card">
+
+          <div class="mail-icon">
+            ✉
+          </div>
+
+          <input
+            type="email"
+            placeholder="Seu email"
+            id="emailInput"
+          />
+
+          <input
+            type="password"
+            placeholder="Sua senha"
+            id="passwordInput"
+          />
+
+          <button class="btn-primary full" id="enterButton">
+            Entrar
+          </button>
+
+          <div class="social-login">
+
+            <button class="social-btn">
+              G
+            </button>
+
+            <button class="social-btn">
+              O
+            </button>
+
+            <button class="social-btn">
+              
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="dashboard-preview" id="dashboard">
+
+      <aside class="sidebar">
+
+        <button class="compose-btn" id="composeButton">
+          + Escrever
+        </button>
+
+        <ul>
+
+          <li class="active sidebar-item">
+            Caixa de entrada
+          </li>
+
+          <li class="sidebar-item">
+            Enviados
+          </li>
+
+          <li class="sidebar-item">
+            Rascunhos
+          </li>
+
+          <li class="sidebar-item">
+            Lixeira
+          </li>
+
+          <li class="sidebar-item">
+            Spam
+          </li>
+
+        </ul>
+
+      </aside>
+
+      <div class="mail-list">
+
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Buscar emails..."
+            id="searchInput"
+          />
+        </div>
+
+        <div class="email active-email">
+          <strong>Lucas Almeida</strong>
+          <span>Reunião de alinhamento</span>
+          <small>10:30</small>
+        </div>
+
+        <div class="email">
+          <strong>Mariana Souza</strong>
+          <span>Proposta comercial</span>
+          <small>Ontem</small>
+        </div>
+
+        <div class="email">
+          <strong>Equipe Suporte</strong>
+          <span>Atualização da sua conta</span>
+          <small>Ontem</small>
+        </div>
+
+        <div class="email">
+          <strong>Newsletter</strong>
+          <span>Novidades da semana</span>
+          <small>Seg</small>
+        </div>
+
+      </div>
+
+      <div class="mail-view">
+
+        <h2 id="mailTitle">
+          Reunião de alinhamento
+        </h2>
+
+        <div class="mail-user">
+
+          <div class="avatar">
+            LA
+          </div>
+
+          <div>
+            <strong id="mailUser">
+              Lucas Almeida
+            </strong>
+
+            <p>
+              para mim
+            </p>
+          </div>
+
+        </div>
+
+        <div class="mail-content">
+
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line short"></div>
+
+        </div>
+
+        <div class="actions">
+
+          <button id="replyButton">
+            Responder
+          </button>
+
+          <button id="forwardButton">
+            Encaminhar
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="features" id="recursos">
+
+      <h2>
+        Recursos inteligentes
+      </h2>
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <h3>Escrita rápida</h3>
+          <p>
+            Crie emails rapidamente com interface moderna.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Organização</h3>
+          <p>
+            Separe emails importantes e organize pastas.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Segurança</h3>
+          <p>
+            Plataforma segura para comunicação profissional.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <div class="toast" id="toast">
+    Ação executada com sucesso!
+  </div>
+
+  <script src="./src/app.js"></script>
+  <script src="./src/animations.js"></script>
+  <script src="./src/particles.js"></script>
+
+</body>
+</html>

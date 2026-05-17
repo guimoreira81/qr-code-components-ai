@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xadrez Web</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+  <header>
+    <h1>♟ Xadrez Web</h1>
+
+    <div class="controls">
+
+      <select id="mode">
+        <option value="pvp">2 Jogadores</option>
+        <option value="pvb">Jogador vs Bot</option>
+        <option value="bvb">Bot vs Bot</option>
+      </select>
+
+      <select id="difficulty">
+        <option value="1">Bot Fácil</option>
+        <option value="2">Bot Médio</option>
+        <option value="3">Bot Difícil</option>
+      </select>
+
+      <button id="themeBtn">🌙 Tema</button>
+
+      <button id="restartBtn">🔄 Reiniciar</button>
+
+    </div>
+
+    <div class="scoreboard">
+      <div>⚪ Branco: <span id="whiteScore">0</span></div>
+      <div>⚫ Preto: <span id="blackScore">0</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div id="board"></div>
+  </main>
+
+  <script src="./src/script.js"></script>
+</body>
+</html>
